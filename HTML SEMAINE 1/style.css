@@ -1,0 +1,307 @@
+:root {
+    --body-color: black;
+    --front-color: #631A86;
+    --font-family: 'Black Ops One', cursive;
+}
+
+body {
+    background: linear-gradient(black 50%, #2fe44b 90%);
+    min-height: 50vh;
+    margin: 20px;
+    border: 10px solid #e0e0e0;
+}
+
+/* --- HEADER (aide avec Gemini pour orientation et apprentissage) --- */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px; 
+    background: linear-gradient(#2fe44b, black); 
+    box-sizing: border-box;
+}
+
+.site-header img, img.site-header {
+    display: block;
+    width: auto;
+    height: 40px;
+}
+
+.barre-onglet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 40px;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+a.onglet {
+    color: white;              
+    text-decoration: none;     
+    background: linear-gradient(#2fe44b, black); 
+    padding: 10px 20px;        
+    border-radius: 5px;        
+    font-weight: bold;         
+    justify-content: space-around;
+    align-items: right;
+    font-size: 16px;
+    flex: 1;
+    max-width: 150px;
+    text-align: center;
+}
+
+a.onglet::after {
+    transition: left 0.6s ease, right 0.6s ease;
+}
+
+a.onglet:hover {
+   background: linear-gradient(black, #2fe44b); 
+   transform: translateY(-2px);
+   color: rgb(209, 133, 27)
+}
+
+a.onglet:hover::after {
+    left: 50%;
+    right: 50%;
+}
+
+
+/*--- HEADER (aide avec Gemini pour orientation et apprentissage) --- */
+
+/* --- MAIN (aide avec Gemini pour orientation et apprentissage)--- */
+/* --- TEXTE ET ANIMATION */
+
+p{
+    font-family: 'Black Ops One', cursive;
+}
+
+a{
+    color: var(--front-color);
+    font-family: 'Black Ops One', cursive;
+}
+
+a.text{
+    font-size: 30px;
+    font-style: italic;
+    margin: 0;
+    text-shadow: 5px 5px 5px #931717;
+    color: #f4e992;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.6s ease;
+    text-decoration: none;
+    bottom: -20px;
+    left: 20%;
+}
+
+a.text::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    background-color: currentColor;
+    transition: left 0.6s ease, right 0.6s ease;
+}
+
+a.text:hover {
+    transform: scale(1.15);
+    color: rgb(209, 133, 27);
+}
+
+a.text:hover::after {
+    left: 50%;
+    right: 50%;
+}
+
+
+a.text3 {
+    font-size: 30px;
+    font-style: italic;
+    margin: 0;
+    text-shadow: 5px 5px 5px #931717;
+    color: #c8a4b5;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.6s ease;
+    text-decoration: none;
+    bottom: -20px;
+    left: 13%;
+}
+
+a.text3::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    background-color: currentColor;
+    transition: left 0.6s ease, right 0.6s ease;
+}
+
+a.text3:hover {
+    transform: scale(1.15);
+    color: rgb(209, 133, 27);
+}
+
+a.text3:hover::after {
+    left: 50%;
+    right: 50%;
+}
+
+/* --- IMAGE ET ANIMATION --- */
+
+.img-container {
+   width: 40px auto;
+   margin: 40px auto;
+   height: 90%;
+   align-items: center;
+   justify-content: center;
+   border-radius: 16px;
+   border: 5px solid #fef580;
+   display: flex;
+   flex-direction: column;
+}
+
+.img-container2 {
+    width: 40px auto;
+    margin: 40px auto;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    border: 5px solid #dea5b7;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container img {
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+    width: 150%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    left: 20%;
+}
+
+/* --- BLOC --- */
+
+.presentation-contenu{ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0 30px;
+    align-content: center;
+}
+
+.bloc-1 {
+    width: calc(100%/3);
+    height: 1100px;
+    align-content: center;
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(to bottom, black, #2fe44b);
+    border: 10px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 30px auto;
+}
+
+.bloc-2 {
+    width: calc(100%/3);
+    height: 1100px;
+    align-content: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    background-color: black;
+    border: 10px solid #e0e0e0;
+    border-radius: 100px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 20px auto;
+}
+
+.bloc-3 {
+    width: calc(100%/3);
+    height: 1100px;
+    align-content: center;
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(to bottom, black, #2fe44b);
+    border: 10px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 30px auto;
+}
+
+.bloc-4 {
+    width: 100%;                 
+    max-width: 800px;             
+    min-height: 400px;            
+    display: flex;                
+    justify-content: center;      
+    padding: 40px;                
+    background: linear-gradient(to bottom, black, #2fe44b);
+    border: 10px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 30px auto;          
+    box-sizing: border-box;
+}
+
+.bloc-4 p{
+    color: white;               
+    font-size: 18px;             
+    line-height: 1.6;             
+    text-align: justify;
+}
+
+.bloc-video {
+     width: 100%;                 
+    max-width: 800px;             
+    min-height: 400px;            
+    display: flex;                
+    justify-content: center;      
+    padding: 40px;                
+    background: linear-gradient(to bottom, black, #2fe44b);
+    border: 10px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 30px auto;          
+    box-sizing: border-box;
+}
+/* --- MAIN --- (aide avec Gemini pour orientation et apprentissage) */
+
+/* --- FOOTER ---*/
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0px; 
+    background: linear-gradient(#2fe44b, black); 
+    box-sizing: border-box; 
+}
